@@ -1,0 +1,160 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna stranica</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav style="width:100%; background:#eee; padding:10px; display:flex; justify-content:space-between; align-items:center;">
+        <div>
+            <a href="#">Stranica 1</a> |
+            <a href="#">Stranica 2</a> |
+            <a href="#">Stranica 3</a>
+        </div>
+
+        <button onclick="document.getElementById('popup').style.display='block'">Prijava</button>
+    </nav>
+
+    <div id="popup" style="display:none; position:fixed; top:30%; left:40%; background:white; padding:20px; border:1px solid #000;">
+        <h3>Prijava</h3>
+        <label>Ime:</label><br>
+      <input type="text"><br><br>
+        <label>Prezime:</label><br>
+      <input type="text"><br><br>
+        <label>Email:</label><br>
+      <input type="email"><br><br>
+        <label>Lozinka (probna lozinka koja ne služi za ništa):</label><br>
+<br><br>
+        <button onclick="document.getElementById('popup').style.display='none'">Pošalji</button>
+    </div>
+
+    <section class="texto1" style="margin-top:20px;">
+Sport je važan dio zdravog načina života jer potiče tjelesnu aktivnost, jača tijelo i poboljšava opće raspoloženje. Bavljenje sportom razvija disciplinu, upornost i timski duh, bez obzira radi li se o profesionalnom ili rekreativnom angažmanu. Osim toga, sport okuplja ljude, potiče fair-play i pruža osjećaj zadovoljstva nakon svakog postignutog cilja.
+</section>
+    <section class="texto2" style="margin-top:20px;">
+Sport u Hrvatskoj zauzima važno mjesto u društvu i predstavlja izvor ponosa za mnoge građane. Zemlja je poznata po uspjesima u nogometu, rukometu, tenisu i vaterpolu, a sportski uspjesi često ujedinjuju naciju. Mnogi ljudi rekreativno sudjeluju u sportskim aktivnostima, a lokalni klubovi i sportska društva igraju ključnu ulogu u razvoju mladih sportaša. Sport tako obogaćuje svakodnevni život i pridonosi zdravlju i zajedništvu u Hrvatskoj.
+    </section>
+
+    <hr>
+
+    Nogometni stadioni
+    <ol>Stadion Maksimir – Zagreb</ol>
+	<ol>Stadion Poljud – Split</ol>
+	<ol>Stadion Rujevica – Rijeka</ol>
+	</hr>
+	
+	<hr>
+	
+	Poznati sportaši iz hrvatske
+	<ul>Luka Modrić – nogometaš, jedan od najboljih veznjaka na svijetu.</ul>
+
+	<ul>Janica Kostelić – legendarna skijašica i višestruka olimpijska pobjednica.</ul>
+
+	<ul>Ivano Balić – rukometaš, često smatran jednim od najboljih na svijetu.</ul>
+
+	<ul>Goran Ivanišević – tenisač, pobjednik Wimbledona.</ul>
+
+	<ul>Sandra Perković – atletičarka, višestruka prvakinja u bacanju diska.</ul>
+	</hr>
+
+    <label for="browser">Najdraži pretraživač:</label>
+<input list="browsers" id="browser" name="browser">
+    <datalist id="browsers">
+        <option value="Crome">
+        <option value="Edge">
+        <option value="Explorer">
+        <option value="Firefox">
+        <option value="Opera">
+    </datalist>
+
+    <!-- FORMA DA/NE -->
+    <form action="/action_page.php" method="get" style="margin-top:20px;">
+        Jeste li se ikada bavili sportom:<br><br>
+        <button name="subject" type="submit" value="DA">DA</button>
+        <button name="subject" type="submit" value="NE">NE</button>
+    </form>
+
+    <!-- TABLICA SPORTOVA -->
+    <table border="1" style="margin-top:20px; border-collapse:collapse;">
+        <tr>
+            <th>Sport</th>
+            <th>Aktivni klubovi u Hrvatskoj</th>
+        </tr>
+        <tr>
+            <td>Nogomet</td>
+            <td>Muški: 1450 | Ženski: 20+</td>
+        </tr>
+        <tr>
+            <td>Košarka</td>
+            <td>Muški: 177–212 | Ženski: 12-15</td>
+        </tr>
+        <tr>
+            <td>Odbojka</td>
+            <td>Muški: 85 | Ženski: 120</td>
+        </tr>
+        <tr>
+            <td>Hokej</td>
+            <td>Muški: 15 | Ženski: 3-4</td>
+        </tr>
+        <tr>
+            <td>Atletika</td>
+          <td> 164</td>
+        </tr>
+    </table>
+
+    <div style="margin-top:20px;">
+      <iframe src="slika_2.jpg" width="300" height="200"></iframe>
+      <iframe src="slika_3.jpg" width="300" height="200"></iframe>
+    </div>
+
+    <div style="margin-top:20px;">
+      <embed type="image/jpg" src="slika_1.jpg" width="300" height="200">
+        <embed type="image/jpg" src="slika_4.jpg" width="300" height="200">
+    </div>
+
+<div style="margin-top:20px;">
+        <a href="https://www.youtube.com" target="_blank">Primjer linka na video/stranicu</a>
+    </div>
+
+    <!-- MULTIMEDIJSKI ELEMENTI -->
+    
+    <img src="slika_5.jpg" alt="slika">
+    <footer style="margin-top:40px;">
+  <picture>
+<source srcset="" type="image/png">
+      </picture>
+        <video controls width="200">
+            <source src="video_1.mp4" type="video/mp4">
+	  </video>
+<form action="/submit_form.php" method="post" style="margin-top:20px;">
+  <h3>Unesite svoje podatke</h3>
+  
+  <label for="fname">Ime:</label><br>
+  <input type="text" id="fname" name="fname" required><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="sport">Omiljeni sport:</label><br>
+  <select id="sport" name="sport" required>
+    <option value="">--Odaberi sport--</option>
+    <option value="nogomet">Nogomet</option>
+    <option value="kosarka">Košarka</option>
+    <option value="odbojka">Odbojka</option>
+    <option value="hokej">Hokej</option>
+    <option value="atletika">Atletika</option>
+  </select><br><br>
+  
+  <button type="submit">Pošalji</button>
+</form>
+        <button>Gumb</button>
+</footer>
+
+    <a href="https://shouldseethis.com/?utm_source=chatgpt.com">Fora stranica</a>
+
+</body>
+</html>
